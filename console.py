@@ -33,6 +33,7 @@ def parse(arg):
         retl.append(curly_braces.group())
         return retl
 
+
 class HBNBCommand(cmd.Cmd):
     """
     Custom command interpreter class.
@@ -205,6 +206,7 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     obj.__dict__[k] = v
         storage.save()
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
